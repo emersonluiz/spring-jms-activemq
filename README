@@ -1,0 +1,11 @@
+Run ApacheMQ with Docker:
+docker run -p 61616:61616 -p 8161:8161 -t webcenter/activemq
+
+Run spring-jms-producer:
+$ java -jar spring-jms-producer-0.0.1.jar
+
+Run spring-jms-receiver:
+$ java -jar spring-jms-receiver-0.0.1.jar
+
+Send Message:
+http://localhost:8080/send?message=test
